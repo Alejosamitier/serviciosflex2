@@ -1,0 +1,295 @@
+// -------------------------------
+// VARIABLES
+// -------------------------------
+$font-main: Arial, Helvetica, sans-serif;
+$size-base: 12pt;
+$line-base: 18pt;
+
+$color-main-bg: #E5F4FF;
+$color-accent: #2D4E6C;
+$color-hover: #5c5a5a;
+$color-grey: grey;
+$color-white: #fff;
+
+
+// -------------------------------
+// GLOBAL
+// -------------------------------
+* {
+  font-family: $font-main;
+  font-size: $size-base;
+  line-height: $line-base;
+}
+
+body {
+  background-color: $color-main-bg;
+}
+
+
+// -------------------------------
+// CLASES GENERALES
+// -------------------------------
+ul {
+  list-style: none;      
+  padding: 0;
+  margin: 0;
+  display: flex;         /* Pone los li en línea */
+  gap: 10px;             /* Espacio entre botones (opcional) */
+}
+
+
+.negro {
+  display: inline-block;
+  background: $color-accent;
+  color: $color-white;
+  padding: 10px 30px;
+  text-decoration: none;
+
+  &:hover {
+    background: $color-hover;
+  }
+}
+
+h1, h2, div {
+  background: $color-grey;
+  color: $color-white;
+  justify-content: space-around;
+  padding: 15px;
+  margin: 20px 0;
+  display: flex;
+  text-align: center;
+}
+
+h1 {
+  padding: 10px 30px;
+  font-size: 40px;
+}
+
+h2 {
+  padding: 10px 30px;
+  font-size: 25px;
+}
+
+input:invalid {
+  color: grey;
+}
+
+.mensaje {
+  text-align: center;
+}
+
+
+// -------------------------------
+// SECCIONES
+// -------------------------------
+.cabeza {
+  background-color: lighten($color-main-bg, 3%);
+  display: flex;
+  width: 60%;
+  padding: 0 20%;
+}
+
+.textoprincipal {
+  max-width: 1140px;
+  margin: 0 auto 10px;
+  display: grid;
+  padding: 40px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+
+  img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+.galeria {
+  max-width: 1200px;
+  margin: 0 auto 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 5px;
+  padding: 20px auto;
+
+  .imagen {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:nth-child(1),
+    &:nth-child(4) {
+      grid-column-start: span 2;
+    }
+  }
+}
+
+.contacto {
+  display: block;
+  padding: 0 20%;
+  width: 60%;
+  text-align: center;
+
+  h2 {
+    color: $color-white;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    resize: none;
+    margin-bottom: 20px;
+  }
+}
+
+.instagram {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 5%;
+}
+
+.contenedor2 {
+  background-color: $color-grey;
+  text-align: center;
+  text-decoration: none;
+
+  .empresas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+
+    img {
+      width: 200px;
+      height: 45px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+// -------------------------------
+// NAV / MENU RESPONSIVE
+// -------------------------------
+nav {
+  max-width: 1200px;
+  margin: 0 auto 10px;
+  padding: 10px;
+  background: $color-grey;
+  display: flex;
+  justify-content: space-around;
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1001;
+
+    span {
+      height: 3px;
+      width: 25px;
+      background-color: black;
+      margin: 4px 0;
+      border-radius: 2px;
+
+      &:hover {
+        background: $color-accent;
+      }
+    }
+  }
+
+  #menu-checkbox {
+    display: none;
+  }
+}
+
+
+// -------------------------------
+// FOOTER
+// -------------------------------
+footer {
+  display: flex;
+  background: $color-accent;
+  color: $color-white;
+  padding: 30px;
+  justify-content: space-around;
+  max-width: 1160px;
+  margin: 0 auto 10px;
+}
+
+
+// -------------------------------
+// MEDIA QUERY
+// -------------------------------
+@media (max-width: 589px) {
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+
+    section {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: 100%;
+      background: #333;
+      padding-top: 60%;
+      text-align: left;
+      padding: 10px 0;
+      transition: right 0.3s ease;
+    }
+
+    #menu-checkbox:checked ~ section {
+      right: 0;
+    }
+
+    .menu-toggle {
+      display: flex;
+      z-index: 1000;
+    }
+
+    .negro {
+      margin: 10px;
+    }
+
+    a {
+      display: block;
+      padding: 15px;
+      text-align: left;
+    }
+  }
+
+  .instagram {
+    max-width: 20%;
+    min-width: 15%;
+  }
+}
