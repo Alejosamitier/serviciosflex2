@@ -16,34 +16,40 @@
 
 </head>
 <body>
+   
     <!-- logo de la pagina (redirige también a Inicio) -->
   
+    <header>
+
+        <!-- logo de la página -->
         <a href="index.html">
             <img class="cabeza" src="img/cabecera.png" alt="Logo de la página">
         </a>
 
+        <!-- menú de navegación -->
+        <nav> 
+            <input type="checkbox" id="menu-checkbox">
+            
+            <label for="menu-checkbox" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-    <!-- menu de navegacion -->
-    <nav> 
-        <!-- checkbox oculto para controlar el menu hamburguesa en móviles -->
-        <input type="checkbox" id="menu-checkbox">
+            <ul>
+                <li><a href="index.html" class="negro">Inicio</a></li>
+                <li><a href="pages/nosotros.html" class="negro">Nosotros</a></li>
+                <li><a href="pages/servicios.html" class="negro">Servicios</a></li>
+                <li><a href="pages/galeria.html" class="negro">Galería</a></li>
+                <li><a href="pages/contactos.html" class="negro">Contacto</a></li>
+            </ul>
+        </nav>
 
-        <!-- label que se usa como boton de menu hamburguesa -->
-        <label for="menu-checkbox" class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+    </header>
 
-        <!-- seccion que contiene los enlaces del menu -->
-        <ul>
-    <li><a href="index.html" class="negro">Inicio</a></li>
-    <li><a href="pages/nosotros.html" class="negro">Nosotros</a></li>
-    <li><a href="pages/servicios.html" class="negro">Servicios</a></li>
-    <li><a href="pages/galeria.html" class="negro">Galería</a></li>
-    <li><a href="pages/contactos.html" class="negro">Contacto</a></li>
-  </ul>
-    </nav>
+
+
+
 
     <!-- contenido principal de la pagina -->
     <main>
