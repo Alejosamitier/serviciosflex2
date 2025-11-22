@@ -9,6 +9,14 @@ body {
   background-color: #E5F4FF;
 }
 
+.navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 3000 !important;
+}
+
 ul {
   list-style: none;
   padding: 0;

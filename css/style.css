@@ -77,6 +77,8 @@ nav #menu-checkbox {
   display: none;
 }
 
+
+
 /* -------------------- TITULOS -------------------- */
 h1 {
   padding: 10px 30px;
@@ -273,4 +275,15 @@ footer {
     width: 90%;
     padding: 0 5%;
   }
+}
+nav ul {
+    z-index: 5000 !important;
+}
+
+nav .menu-toggle {
+    z-index: 6000 !important;
+}
+
+nav {
+    z-index: 7000 !important;
 }
