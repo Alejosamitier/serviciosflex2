@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO básico -->
     <title>Servicios de Transporte de Cargas | Traslados Refrigerados y Peligrosos</title>
     <meta name="description"
         content="Traslado de cargas completas, refrigeradas, peligrosas y contenedores. Operamos en toda Argentina, Servicio profesional.">
     <meta name="robots" content="index, follow">
 
-    <!-- URL canónica -->
     <link rel="canonical" href="https://alejosamitier.github.io/serviciosflex2/pages/servicios.html">
 
-    <!-- Open Graph (para compartir en redes) -->
     <meta property="og:title" content="Servicios de Transporte de Cargas">
     <meta property="og:description"
         content="Traslado de cargas completas, refrigeradas y peligrosas en toda Argentina. Servicio profesional con seguimiento satelital.">
@@ -22,13 +22,15 @@
     <meta property="og:url" content="https://alejosamitier.github.io/serviciosflex2/pages/servicios.html">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
 
-    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="../css/style.css">
 
-    <!-- JSON-LD (Datos estructurados SEO) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -37,23 +39,19 @@
         "url": "https://alejosamitier.github.io/serviciosflex2/",
         "logo": "https://alejosamitier.github.io/serviciosflex2/img/cabecera.png",
         "description": "Transporte de cargas completas, refrigeradas, peligrosas y contenedores. Servicios en Argentina, Chile, Uruguay, Paraguay y Bolivia.",
-        "areaServed": ["Argentina"],
-      
+        "areaServed": ["Argentina"]
     }
     </script>
-
 </head>
 
 <body>
 
     <header>
 
-        <!-- Logo -->
         <a href="../index.html" class="logo">
             <img class="cabeza" src="../img/cabecera.png" alt="Logo de la página">
         </a>
 
-        <!-- Menú de navegación -->
         <nav>
             <input type="checkbox" id="menu-checkbox">
             <label for="menu-checkbox" class="menu-toggle">
@@ -73,33 +71,73 @@
 
     </header>
 
-    <!-- Contenido principal -->
     <main>
-        <div class="textoprincipal">
+        <div class="container my-5">
 
-            <h1>Servicios</h1>
+            <div class="row justify-content-center">
 
-            <p>Realizamos el traslado de equipos completos con 22 pallets o más y a granel (cargas refrigeradas o
-                secas).</p>
-            <p>Entregas directas a clientes, interplantas y servicio round trip.</p>
-            <p>Traslado de cargas completas desde y hacia cualquier punto de Argentina, Chile, Uruguay, Paraguay y
-                Bolivia.</p>
-            <p>Transporte de contenedores.</p>
-            <p>Poseemos habilitación de carga peligrosa y Sedronar.</p>
-            <p>Cargas refrigeradas (congelados y ultra congelados) y a temperatura ambiente.</p>
-            <p>Unidades equipadas con sistema de seguimiento satelital.</p>
-            <p>Si tenés que realizar el traslado de 22 pallets o más, envianos un mensaje.</p>
+                <div class="col-lg-8 col-md-10">
 
-            <div class="contenedor2">
-                <h2>Estas empresas confían en nuestros servicios</h2>
+                    <div class="card shadow-lg border-0">
 
-                <div class="empresas">
-                    <img src="../img/dexter.png" alt="dexter">
-                    <img src="../img/clarologo.png" alt="claro">
-                    <img src="../img/psa.png" alt="psa">
+                        <div class="card-body">
+
+                            <h1 class="card-title text-center text-white mb-4">Servicios</h1>
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i class="bi bi-truck text-primary me-2"></i>
+                                    Realizamos el traslado de equipos completos con **22 pallets o más** y a granel
+                                    (cargas refrigeradas o secas).
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-arrow-right-short text-primary me-2"></i>
+                                    Entregas directas a clientes, interplantas y servicio **round trip**.
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-globe text-primary me-2"></i>
+                                    Traslado de cargas completas desde y hacia cualquier punto de **Argentina, Chile,
+                                    Uruguay, Paraguay y Bolivia**.
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-box-seam text-primary me-2"></i>
+                                    Transporte de **contenedores**.
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-patch-check text-primary me-2"></i>
+                                    Poseemos habilitación de **carga peligrosa** y **Sedronar**.
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-thermometer-half text-primary me-2"></i>
+                                    Cargas **refrigeradas** (congelados y ultra congelados) y a **temperatura
+                                    ambiente**.
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-geo-alt text-primary me-2"></i>
+                                    Unidades equipadas con sistema de **seguimiento satelital**.
+                                </li>
+                                <li class="list-group-item list-group-item-info">
+                                    <i class="bi bi-chat-dots text-dark me-2"></i>
+                                    Si tenés que realizar el traslado de 22 pallets o más, **envianos un mensaje**.
+                                </li>
+                            </ul>
+
+                            <div class="contenedor2 mt-4 pt-3 border-top">
+                                <h2 class="h5 text-center mb-3">Estas empresas confían en nuestros servicios</h2>
+
+                                <div class="empresas d-flex justify-content-around align-items-center">
+                                    <img src="../img/dexter.png" alt="dexter" class="img-fluid me-2"
+                                        style="max-height: 50px;">
+                                    <img src="../img/clarologo.png" alt="claro" class="img-fluid me-2"
+                                        style="max-height: 50px;">
+                                    <img src="../img/psa.png" alt="psa" class="img-fluid" style="max-height: 50px;">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </main>
 
@@ -107,6 +145,9 @@
         Alejo Samitier 2025
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
