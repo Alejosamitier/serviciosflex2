@@ -99,6 +99,7 @@ input:invalid {
   grid-gap: 5px;
   padding: 20px auto;
 }
+
 .galeria .imagen img {
   width: 100%;
   height: 100%;
@@ -107,6 +108,26 @@ input:invalid {
 }
 .galeria .imagen:nth-child(1), .galeria .imagen:nth-child(4) {
   grid-column-start: span 2;
+}
+
+.galeriahome {
+    width: 100%;
+    display: flex;
+    justify-content: center;   /* centra horizontal */
+    padding: 10px;
+}
+
+.galeriahome .imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;               /* se adapta a pantallas chicas */
+}
+
+.galeriahome .imagen img {
+    max-width: 100%;           /* evita que se rompa */
+    height: auto;              /* mantiene proporción */
+    display: block;
 }
 
 .contacto {

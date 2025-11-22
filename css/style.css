@@ -157,6 +157,26 @@ input:invalid {
   grid-column: span 2;
 }
 
+.galeriahome {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.galeriahome .imagen {
+    width: 400px;   /* ancho del rectángulo */
+    height: 220px;  /* alto del rectángulo */
+    overflow: hidden;
+}
+
+.galeriahome .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* recorta */
+    object-position: center; /* centra la zona visible */
+}
+
+
 /* -------------------- CONTACTO -------------------- */
 .contacto {
   width: 100%;
