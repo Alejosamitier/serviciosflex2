@@ -165,8 +165,8 @@ input:invalid {
 
 .galeriahome .imagen {
     width: 400px;   /* ancho del rectángulo */
-    height: 220px;  /* alto del rectángulo */
-    overflow: visible;
+    height: 320px;  /* alto del rectángulo */
+    overflow: hidden;
 }
 
 .galeriahome .imagen img {
