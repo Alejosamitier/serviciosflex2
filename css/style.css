@@ -172,7 +172,7 @@ input:invalid {
 .galeriahome .imagen img {
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* recorta */
+    object-fit: contain;
     object-position: center; /* centra la zona visible */
 }
 
